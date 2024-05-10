@@ -1,0 +1,43 @@
+"""
+
+type Query {
+    brew: Drink
+}
+
+type Drinks {
+    id: ID
+    name: String
+    }
+
+    beans: Bean
+    brewingMethod: BrewingMethod!
+    servingTemperature: Float!
+    brewTemperature: Float!
+    }
+
+enum BrewingMethod {
+    ESPRESSO
+    FILTER
+    FRENCH_PRESS
+    AEROPRESS
+    CEMEX
+}
+
+
+type Bean{
+    id: ID
+    brand: String
+    origin: String
+    region: String
+    producer: String
+    process: RoastProcess
+    roastType: RoastType!
+}
+enum RoastType {
+    LIGHT
+    MEDIUM
+    DARK
+}
+enum RoastProcess {
+    Natural
+}"""

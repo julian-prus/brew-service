@@ -1,0 +1,8 @@
+type Query {
+    brew: Drink
+}
+
+type Drink {
+    id: ID
+    name: String
+}

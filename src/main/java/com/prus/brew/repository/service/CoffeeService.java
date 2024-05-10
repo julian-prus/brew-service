@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class CoffeeService {
 
-
     @QueryMapping
     public Drink drinkById(@Argument String id){
         return Drink.getByID(id);

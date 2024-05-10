@@ -18,6 +18,6 @@ public record Drink(String id, String name) {
         return drinks.stream()
                 .filter(drink -> Objects.equals(drink.id, id))
                 .findFirst()
-                .orElse(Drink.builder().build());
+                .orElse(null);
     }
 }

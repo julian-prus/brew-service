@@ -1,0 +1,6 @@
+query brewDetails($id: ID) {
+    drinkById(id: $id) {
+        id
+        name
+    }
+}

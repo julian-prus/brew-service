@@ -1,5 +1,5 @@
 type Query {
-    brew: Drink
+    drinkById(id: ID): Drink
 }
 
 type Drink {
